@@ -13,9 +13,9 @@ export default async function SonicX3() {
         <div className="text-2xl ">7 Modes of Power for a Reasonable Price</div>
       </div>
       <div className="flex gap-6">
-        <button className="bg-blue-500 px-6 py-2 rounded-4xl hover:cursor-pointer text-white">
+        <Link href={"/products/muskaan-sonic-x3"} className="bg-blue-500 px-6 active:bg-blue-700 py-2 rounded-4xl hover:cursor-pointer text-white">
           Learn More
-        </button>
+        </Link>
         <Link
           href={sendWhatsappMessage}
           target="_blank"
