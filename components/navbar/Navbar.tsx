@@ -1,16 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function Navbar() {
+export default function Navbar() {
   return (
-    <div className="flex h-12 px-32 items-center justify-between font-light text-xs bg-white sticky top-0">
-      <Link href={"/"}>
-        <Image src={"/logo.svg"} alt="Muskaan" width={60} height={12} />
-      </Link>
-      <Link href={"/blogs"} className="hover:underline hover:cursor-pointer">
-        Blogs
-      </Link>
-      <div></div>
-    </div>
+    <header className="sticky top-0 z-10 border-b border-[#e8e9e4] bg-white/95 backdrop-blur">
+      <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6 sm:px-10">
+        <Link href="/" aria-label="Muskaan home">
+          <Image src="/logo.svg" alt="Muskaan" width={72} height={24} />
+        </Link>
+        <div className="flex items-center gap-5 text-sm">
+          <Link
+            href="/products/muskaan-sonic-x3"
+            className="text-[#40534d] hover:underline"
+          >
+            Sonic X3
+          </Link>
+          <Link href="/blogs" className="text-[#40534d] hover:underline">
+            Blog
+          </Link>
+        </div>
+      </nav>
+    </header>
   );
 }

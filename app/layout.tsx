@@ -9,10 +9,38 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Muskaan | Ghar Ghar ma Muskaan",
-  description: "Nepal's Leading electric toothbrush brand",
+  title: {
+    default: "Electric Toothbrush in Nepal | Muskaan",
+    template: "%s | Muskaan Nepal",
+  },
+  description:
+    "Shop the Muskaan Sonic X3 electric toothbrush for Rs. 499. Explore six brushing modes, IPX7 waterproofing, and delivery in Kathmandu and across Nepal.",
+  applicationName: "Muskaan",
+  keywords: [
+    "electric toothbrush Nepal",
+    "best electric toothbrush Nepal",
+    "toothbrush Nepal",
+    "sonic toothbrush Nepal",
+    "buy electric toothbrush in Nepal",
+    "electric toothbrush price in Nepal",
+    "Muskaan Sonic X3",
+  ],
   icons: {
     icon: "/logo.svg",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_NP",
+    siteName: "Muskaan",
+    title: "Electric Toothbrush in Nepal | Muskaan",
+    description:
+      "Shop the Muskaan Sonic X3 electric toothbrush for Rs. 499. Explore six brushing modes, IPX7 waterproofing, and delivery in Kathmandu and across Nepal.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Electric Toothbrush in Nepal | Muskaan",
+    description:
+      "Shop the Muskaan Sonic X3 electric toothbrush for Rs. 499. Explore six brushing modes, IPX7 waterproofing, and delivery in Kathmandu and across Nepal.",
   },
 };
 
