@@ -42,9 +42,8 @@ export const metadata: Metadata = {
     description:
       "Shop the Muskaan Sonic X3 electric toothbrush for Rs. 499. Explore six brushing modes, IPX7 waterproofing, and delivery in Kathmandu and across Nepal.",
   },
-  verification: {
-    "google": "ghwIf8nrN70AXGjWe1dXf0L7tj0V6HvG-jobUla85EA",
-
+  other: {
+    "google-site-verification": "raM4D5x_i6ghtjEV0zqjNpH9Irx6lpzlido_TVrrAXQ",
   }
 };
 
